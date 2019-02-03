@@ -8,8 +8,8 @@ let mensagem: string = 'Seja bem vindo';
 let temporadasFriends: number = 10;
 let estudandoAngular: boolean = true;
 
-let listaDeFrutas: Array<string> = ['Uva', 'Banana', 'Abacaxi'];
-let listaDeFrutas2: string[] = ['Uva', 'Banana', 'Abacaxi'];
+let listaDeFrutas: Array<string> = ['Uva', 'Banana', 'Abacaxi']; // forma 1 de criar array em ts
+let listaDeFrutas2: string[] = ['Uva', 'Banana', 'Abacaxi']; // forma 2 de criar array em ts
 
 
 // Explicação da diferença entre ES5, ES6 e TypeScript
@@ -18,3 +18,6 @@ let listaDeFrutas2: string[] = ['Uva', 'Banana', 'Abacaxi'];
 // comandos ensinados:
 // tsc app.ts para converter de ts para js
 // tsc -w para monitorar o arquivo ts sem precisar ficar convertendo manualmente
+
+// tsc -init para criar o arquivo tsconfig.json
+// esse arquivo serve para configurar a compilação de ts para js
