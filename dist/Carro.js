@@ -19,8 +19,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Veiculo_1 = __importDefault(require("./Veiculo"));
 var Carro = /** @class */ (function (_super) {
     __extends(Carro, _super);
+    // responsável por receber os parâmetros no momento de instanciação da classe
     function Carro(modelo, numeroDePortas) {
         var _this = _super.call(this) || this;
+        // variavel private só pode ser acessada dentro da classe
+        // não pode ser acessada diretamente pelo objeto
         _this.numeroDePortas = 4;
         _this.modelo = modelo;
         _this.numeroDePortas = numeroDePortas;
