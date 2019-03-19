@@ -22,6 +22,8 @@ console.log(concessionaria.mostrarListaDeCarros());
 let cliente = new Pessoa('Rodrigo', 'Gol');
 console.log(cliente.dizerCarroPreferido());
 
+// map faz um loop em casa posicao do array ao enviarmos uma funcao de callback como parametro
+// semelhante a um for each
 concessionaria.mostrarListaDeCarros().map((carro: Carro) => { 
     
     if(carro['modelo'] == cliente.dizerCarroPreferido()) {
