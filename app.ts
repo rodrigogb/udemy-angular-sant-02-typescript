@@ -1,8 +1,8 @@
-let ola = (nome: string, sobrenome: string) => {
+let olaUsuario = (nome: string, sobrenome: string) => {
     console.log('Olá ' + nome + sobrenome);
 }
 
-ola('Rodrigo', 'Garcia');
+olaUsuario('Rodrigo', 'Garcia');
 
 let mensagem: string = 'Seja bem vindo';
 let temporadasFriends: number = 10;
@@ -10,6 +10,12 @@ let estudandoAngular: boolean = true;
 
 let listaDeFrutas: Array<string> = ['Uva', 'Banana', 'Abacaxi']; // forma 1 de criar array em ts
 let listaDeFrutas2: string[] = ['Uva', 'Banana', 'Abacaxi']; // forma 2 de criar array em ts
+
+listaDeFrutas.forEach(fruta => {
+    console.log(fruta);
+});
+
+
 
 
 // Explicação da diferença entre ES5, ES6 e TypeScript

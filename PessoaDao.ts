@@ -5,11 +5,11 @@ export class PessoaDao implements DaoInterface<object> {
     
     nomeTabela: string = 'tb_pessoa';
     
-    inserir(object: Pessoa): boolean {
+    inserir(pessoa: Pessoa): boolean {
         console.log('logica de insert');
         return true;
     }
-    atualizar(object: Pessoa): boolean {
+    atualizar(pessoa: Pessoa): boolean {
         console.log('logica update');
         return true;
     }

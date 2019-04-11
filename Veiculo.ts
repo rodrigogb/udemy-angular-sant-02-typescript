@@ -1,7 +1,13 @@
-// export ???
+// exporta o modulo Veiculo para poder ser importado por outro arquivo
+// ao dar export, transformamos o Veiculo em um Modulo
+// só pode existir uma exportação default por arquivo.
+// a exportação default permite uma importação diferente fora dos parenteses. 
+// ex: import Carro, {OutraClasse} from './Carro'
 export default class Veiculo {
     
-    // protected ???
+    // protected permite que classes herdadas de Veiculo possam modificar a variavel
+    // private não permitiria isso, apenas Veiculo poderia acessar a variavel.
+    // ponto de exclamaçao: ???
     protected modelo!: string;
     protected velocidade: number = 0;
    
@@ -18,5 +24,9 @@ export default class Veiculo {
 
     public velocidadeAtual(): number {
         return this.velocidade;
+    }
+
+    public getModelo(): string {
+        return this.modelo;
     }
 }

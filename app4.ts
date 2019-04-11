@@ -4,16 +4,17 @@ import Concessionaria from './Concessionaria';
 import Pessoa from './Pessoa';
 import { Dao } from './Dao';
 
-let dao: ConcessionariaDao = new ConcessionariaDao();
+let concessionariaDao: ConcessionariaDao = new ConcessionariaDao();
 let concessionaria = new Concessionaria('', []);
 
-dao.inserir(concessionaria);
+concessionariaDao.inserir(concessionaria);
 
-let dao2: PessoaDao = new PessoaDao();
-let pessoa: Pessoa = new Pessoa('','');
+let pessoaDao: PessoaDao = new PessoaDao();
+let pessoa: Pessoa = new Pessoa('Rod','Gar');
 
-dao2.inserir(pessoa);
+pessoaDao.inserir(pessoa);
 
 // Generics
+// Utilizamos generics para trabalhar com qualquer tipo de dado
 let dao3: Dao<Pessoa> = new Dao();
 dao3.inserir(pessoa);
