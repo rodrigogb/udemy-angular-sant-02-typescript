@@ -8,7 +8,7 @@ export default class Veiculo {
     // protected permite que classes herdadas de Veiculo possam modificar a variavel
     // private não permitiria isso, apenas Veiculo poderia acessar a variavel.
     // ponto de exclamaçao: ???
-    protected modelo!: string;
+    protected modelo: string = '';
     protected velocidade: number = 0;
    
     // metodo void nao retorna nada ao ser chamado
